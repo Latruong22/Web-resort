@@ -15,7 +15,7 @@
           <p id="money">VND</p>
           <img id="icon_phone" src="img/phone.png" alt="Phone" />
           <p id="dangtrainghiem">Đăng trãi nghiệm của quý khách</p>
-          <button id="dangnhap">Đăng nhập</button>
+          <button onclick="location.href='http://127.0.0.1:5500/dangnhap.html'" id="dangnhap">Đăng nhập</button>
         </div>
       </div>
     </div>
@@ -34,12 +34,12 @@
       </div>
     </section>
     <div class="taskbar">
-      <p id="taskbar-home">Trang chủ</p>
-      <p id="taskbar-thongtin">Thông tin & Giá</p>
-      <p id="taskbar-tiennghi">Tiện nghi</p>
-      <p id="taskbar-quydinh">Quy định chung</p>
-      <p id="taskbar-Danhgia">Đánh giá</p>
-      <p id="taskbar-ghichu">Ghi chú</p>
+      <a href="http://127.0.0.1:5500/home.html" id="taskbar-home">Trang chủ</a>
+      <a href="#container-thongtin" id="taskbar-thongtin">Thông tin & Giá</a>
+      <a href="#danhsach-tiennghi" id="taskbar-tiennghi">Tiện nghi</a>
+      <a href="#ghichu-quydinh" id="taskbar-quydinh">Quy định chung</a>
+      <a  href="#container-danhgia" id="taskbar-Danhgia">Đánh giá</a>
+      <a href="#ghichu-quydinh" id="taskbar-ghichu">Ghi chú</a>
     </div>
     <div class="line"></div>
     <div class="gioithieu">
@@ -131,7 +131,7 @@
                 <img src="img/paris/buffet.jpg" alt="Buffet sáng">
             </div>
         </div>
-        <div class="container-danhgia">
+        <div class="container-danhgia" id="container-danhgia">
             <div id="luot-danhgia">
                 <p id="trainghiem">Tuyệt vời</p>
                 <p id="sosao">8.9</p>
@@ -148,7 +148,7 @@
           </div>
         </div>
       </div>
-      <div class="container-thongtin">
+      <div class="container-thongtin" id="container-thongtin">
         <div class="text-thongtin">
           <div class="mo_ta">
             <h2 id="name-resort">Paris Deli Danang Beach Hotel</h2>
@@ -226,7 +226,7 @@
           <input id="tongtien" type="text" placeholder="Tổng tiền" disabled />
         </div>
       </div>
-      <div class="danhsach-tiennghi">
+      <div class="danhsach-tiennghi" id="danhsach-tiennghi">
         <h3 id="cactiennghi">Các tiện nghi được ưa chuộng nhất</h3>
         <div class="danhsach-tiennghi1">
           <div class="tiennghi1">
@@ -264,7 +264,7 @@
         </div>
       </div>
     </div>
-    <div class="ghichu-quydinh">
+    <div class="ghichu-quydinh" id="ghichu-quydinh">
         <div class="ghichu">
           <p id="ghichu-text">Ghi chú:</p>
           <input id="khung-ghichu" type="text" placeholder="Nhập ghi chú của bạn" />

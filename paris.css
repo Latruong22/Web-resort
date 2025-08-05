@@ -138,6 +138,7 @@
   justify-content: center;
   background-color: #fff;
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
 }
 #taskbar-home:hover,
 #taskbar-thongtin:hover,
@@ -155,7 +156,7 @@
   height: 1px;
   background-color: rgba(0, 0, 0, 0.4);
   margin: 0 auto;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 .gioithieu {
   width: 1300px;
