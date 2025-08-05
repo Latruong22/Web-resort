@@ -1,0 +1,238 @@
+#dangnhap {
+    width: 140px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(0, 0, 0, 0.2) 99.96%,
+            rgba(12, 12, 12, 0.2) 99.98%),
+        rgba(0, 0, 0, 0.2);
+    stroke-width: 1px;
+    stroke: #000;
+    border-radius: 10px;
+
+}
+
+.top-section button:hover {
+    background-color: #858282;
+}
+
+.top-section {
+    width: 100%;
+    height: 150px;
+    background-color: #f8f6f3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 200px;
+    height: 120px;
+    margin: 20px 0 10px 120px;
+}
+
+.thongtinhome {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    margin: 20px 5px 20px 70px;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon_quocki {
+    width: 48px;
+    height: 48px;
+    margin: 10px 10px;
+}
+
+#money {
+    width: 48px;
+    height: 48px;
+    margin: 25px 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+#icon_phone {
+    width: 48px;
+    height: 48px;
+    margin: 10px 10px;
+}
+
+#dangtrainghiem {
+    margin: 10px 10px;
+}
+
+/*  */
+
+.dangnhap {
+    width: 500px;
+    height: 555px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 81px auto;
+    display: grid;
+    position: relative;
+}
+
+.dangnhap span {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.dangnhap p {
+    margin: 0 auto;
+    width: 260px;
+    height: 0;
+    font-size: 22px;
+}
+
+.dangnhap p:nth-of-type(2) {
+    margin-top: -10px;
+}
+
+.dangnhap input {
+    margin: 6.7px auto;
+    width: 260px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.dangnhap input:nth-of-type(2) {
+    margin-top: -10px;
+}
+
+.dangnhap #log {
+    width: 260px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #fa1c1c;
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin: 0 auto;
+}
+
+.dangnhap #log:hover {
+    background-color: #FF0000;
+    color: #D9D9D9;
+}
+
+.dangnhap #close {
+    width: 81px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 497px;
+    margin-left: 13px;
+}
+
+.dangnhap #quen_mk {
+    color: #000;
+    font-size: 16px;
+    width: 260px;
+    margin: -25px auto;
+    text-align: right;
+}
+
+.dangnhap #dk_tk {
+    text-align: right;
+    color: #000;
+    font-size: 22px;
+    margin-right: 26px;
+}
+
+/*  */
+.dangky {
+    width: 500px;
+    height: 670px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 81px auto;
+    display: grid;
+    position: relative;
+}
+
+.dangky span {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.dangky p {
+    margin: 0 auto;
+    width: 260px;
+    height: 0;
+    font-size: 22px;
+}
+
+.dangky p:nth-of-type(2) {
+    margin-top: -10px;
+}
+
+.dangky p:nth-of-type(3) {
+    margin-top: -10px;
+}
+
+.dangky p:nth-of-type(4) {
+    margin-top: -10px;
+}
+
+.dangky input {
+    margin: 6.7px auto;
+    width: 260px;
+    height: 46px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.dangky input:nth-of-type(2) {
+    margin-top: -10px;
+}
+
+.dangky input:nth-of-type(3) {
+    margin-top: -10px;
+}
+
+.dangky input:nth-of-type(4) {
+    margin-top: -10px;
+}
+
+.dangky #log {
+    width: 260px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #fa1c1c;
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin: 0 auto;
+}
+
+.dangky #log:hover {
+    background-color: #FF0000;
+    color: #D9D9D9;
+}
+
+.dangky #close {
+    width: 81px;
+    height: 45px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 615px;
+    margin-left: 13px;
+}
+
+
+.dangky #dn_tk {
+    text-align: right;
+    color: #000;
+    font-size: 22px;
+    margin-right: 26px;
+}
