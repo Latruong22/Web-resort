@@ -166,12 +166,12 @@
   justify-content: space-between;
 }
 .thongtin-resort {
-  width: 500px;
+  width: 800px;
   height: 70px;
   margin-left: 100px;
 }
 #map-diachi {
-  width: 400px;
+  width: 500px;
   height: 20px;
   display: flex;
   align-items: center;
@@ -337,10 +337,10 @@
 .noidung-danhgia {
   width: 310px;
   height: 150px;
-  justify-content: center;
   margin-top: 0px;
+  margin-right: 0px;
 }
-#danhgia-text {
+input#danhgia-text {
   width: 290px;
   height: 150px;
   font-family: "Times New Roman";
