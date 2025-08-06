@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (user.password === password) {
                 alert("Đăng nhập thành công!");
                 localStorage.setItem("currentUser", JSON.stringify(user));
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } else {
                 alert("Sai mật khẩu!");
             }
