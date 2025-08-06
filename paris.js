@@ -1,9 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
+    var currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    const loginBtn = document.getElementById("dangnhap");
+    const userDisplay = document.getElementById("username-display");
+
+    if (currentUser) {
+        if (userDisplay) {
+            userDisplay.textContent = `Xin chào, ${currentUser.name}!`;
+        }
+
+        if (loginBtn) {
+            loginBtn.textContent = "Đăng xuất";
+            loginBtn.addEventListener("click", function () {
+                localStorage.removeItem("currentUser");
+                alert("Đã đăng xuất!");
+                location.reload();
+            });
+        }
+    } else {
+        if (loginBtn) {
+            loginBtn.textContent = "Đăng nhập";
+            loginBtn.addEventListener("click", function () {
+                window.location.href = "dangnhap.html";
+            });
+        }
+    }
     var btnDanhGia = document.getElementById("danhgia");
     var inputDanhGia = document.getElementById("input-danhgia");
     var hienThiDanhGia = document.getElementById("danhgia-text");
 
-    var currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     if (btnDanhGia) {
         btnDanhGia.addEventListener("click", function () {
