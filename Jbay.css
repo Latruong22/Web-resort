@@ -187,10 +187,11 @@
   height: 70px;
   margin-left: 100px;
 }
-
-
+#ten-resort{
+  width: 900px;
+}
 #map-diachi {
-  width: 400px;
+  width: 600px;
   height: 20px;
   display: flex;
   align-items: center;
@@ -206,12 +207,11 @@
 }
 
 #map-text {
-  width: 400px;
+  width: 600px;
   height: 20px;
   font-family: "Times New Roman";
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
   line-height: normal;
   color: #000;
 }
@@ -310,7 +310,7 @@
   grid-row: 3 / 4;
 }
 
-.item7 {
+.item8 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
@@ -722,7 +722,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-left: 74px;
+  margin-left: 30px;
 }
 
 #toisedat-text {

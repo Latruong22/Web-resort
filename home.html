@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking resort</title>
-    <link rel="stylesheet" href="home.css" />
-  </head>
-  <body>
-    <div class="Home section">
-      <div class="top-section">
-        <img id="logo" src="img/logo.png" alt="Logo" />
-        <div class="thongtinhome">
-            <img id="icon_quocki" src="img/quocki.png" alt="Quốc kỳ" />
-            <p id="money">VND</p>
-            <img id="icon_phone" src="img/phone.png" alt="Phone" />
-            <p id="dangtrainghiem">Đăng trãi nghiệm của quý khách</p>
-            <button onclick="location.href='./dangnhap.html'" id="dangnhap">Đăng nhập</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking resort</title>
+  <link rel="stylesheet" href="home.css" />
+  <script src="log-reg.js"></script>
+</head>
+
+<body>
+  <div class="Home section">
+    <div class="top-section">
+      <img id="logo" src="img/logo.png" alt="Logo" />
+      <div class="thongtinhome">
+        <img id="icon_quocki" src="img/quocki.png" alt="Quốc kỳ" />
+        <p id="money">VND</p>
+        <img id="icon_phone" src="img/phone.png" alt="Phone" />
+        <p id="username-display">Chào mừng bạn đã đến website</p>
+        <button id="dangnhap">Đăng nhập</button>
       </div>
     </div>
-    <div class="bieutuong">
+  </div>
+  <div class="bieutuong">
+  </div>
+  <section class="search-section">
+    <div class="search-bar">
+      <img id="map" src="img/mapicon.png">
+      <input type="text" placeholder="Bạn muốn đi đâu?">
+      <input type="date" placeholder="Ngày nhận phòng - Ngày trả phòng">
+      <select>
+        <option value="1">1 người - 1 phòng</option>
+        <option value="2">2 người - 1 phòng</option>
+        <option value="2">2 người - 2 phòng</option>
+        <option value="2">3 người - 2 phòng</option>
+      </select>
+      <button type="submit"></button>
     </div>
-    <section class="search-section"> 
-        <div class="search-bar">
-          <img id="map" src="img/mapicon.png">
-            <input type="text"  placeholder="Bạn muốn đi đâu?">
-            <input type="date" placeholder="Ngày nhận phòng - Ngày trả phòng">
-            <select>
-                <option value="1">1 người - 1 phòng</option>
-                <option value="2">2 người - 1 phòng</option>
-                <option value="2">2 người - 2 phòng</option>
-                <option value="2">3 người - 2 phòng</option>
-            </select>
-            <button type="submit"></button>
-        </div>
-    </section>
-    <div class="uutien-section">
-      <img id="img-home" src="img/home.png"> 
-      <h2>Sự lựa chọn hàng đầu dành cho bạn</h2>
-    </div>
-    <div class="container-pick">
-      <div class="container-sanpham">
+  </section>
+  <div class="uutien-section">
+    <img id="img-home" src="img/home.png">
+    <h2>Sự lựa chọn hàng đầu dành cho bạn</h2>
+  </div>
+  <div class="container-pick">
+    <div class="container-sanpham">
       <img id="img-resort-psg">
       <p id="paris">Paris Deli Danang Beach Hotel</p>
       <div class="danhgia">
         <p id="sodanhgia">8.8</p>
         <div class="star">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
         </div>
       </div>
       <p id="map-paris">Bãi biển Mỹ Khuê,Đà Nẵng Xem trên bản đồ</p>
@@ -59,21 +62,22 @@
         <img id="baibien-icon">
         <p id="text-giapbien">Giáp biển</p>
       </div>
-      <p id="thongtin">Paris Deli Danang Beach Hotel nằm bên Bãi biển Mỹ Khê sôi động, chỉ cách sân bay quốc tế Đà Nẵng 10 phút lái xe. Khách sạn này có hồ bơi ngoài trời và trung tâm thể dục.
+      <p id="thongtin">Paris Deli Danang Beach Hotel nằm bên Bãi biển Mỹ Khê sôi động, chỉ cách sân bay quốc tế Đà Nẵng
+        10 phút lái xe. Khách sạn này có hồ bơi ngoài trời và trung tâm thể dục.
       </p>
       <button onclick="location.href='./paris.html'" id="xem">Xem chi tiết</button>
-      </div>
-      <div class="container-sanpham">
+    </div>
+    <div class="container-sanpham">
       <img id="img-resort-golden">
       <p id="golden">Golden Lotus Luxury Hotel Danang</p>
       <div class="danhgia">
         <p id="sodanhgia">9.0</p>
         <div class="star">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
         </div>
       </div>
       <p id="map-paris">Bãi biển Mỹ Khuê,Đà Nẵng Xem trên bản đồ</p>
@@ -82,21 +86,22 @@
         <img id="baibien-icon">
         <p id="text-giapbien">Giáp biển</p>
       </div>
-      <p id="thongtin">Golden Lotus Luxury Hotel Danang - Complimentary Daily Afternoon Tea có xe đạp miễn phí, hồ bơi ngoài trời, trung tâm thể dục và sân hiên ở Đà Nẵng.
+      <p id="thongtin">Golden Lotus Luxury Hotel Danang - Complimentary Daily Afternoon Tea có xe đạp miễn phí, hồ bơi
+        ngoài trời, trung tâm thể dục và sân hiên ở Đà Nẵng.
       </p>
-      <button id="xem">Xem chi tiết</button>
-      </div>
-      <div class="container-sanpham">
+      <button onclick="location.href='./golden.html'" id="xem">Xem chi tiết</button>
+    </div>
+    <div class="container-sanpham">
       <img id="img-resort-jbay">
       <p id="jbay">JBAY Beachfront Boutique Hotel</p>
       <div class="danhgia">
         <p id="sodanhgia">9.5</p>
         <div class="star">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
         </div>
       </div>
       <p id="map-paris">Bãi biển Mỹ Khuê,Đà Nẵng Xem trên bản đồ</p>
@@ -105,21 +110,22 @@
         <img id="baibien-icon">
         <p id="text-giapbien">Giáp biển</p>
       </div>
-      <p id="thongtin">Nằm ở Đà Nẵng, cách Bãi biển Mỹ Khê 3 phút đi bộ, JBAY Beachfront Boutique Hotel cung cấp chỗ nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, phòng chờ chung và sân hiên.
+      <p id="thongtin">Nằm ở Đà Nẵng, cách Bãi biển Mỹ Khê 3 phút đi bộ, JBAY Beachfront Boutique Hotel cung cấp chỗ
+        nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, phòng chờ chung và sân hiên.
       </p>
-      <button id="xem">Xem chi tiết</button>
-      </div>
-      <div class="container-sanpham">
+      <button onclick="location.href='Jbay.html'" id="xem">Xem chi tiết</button>
+    </div>
+    <div class="container-sanpham">
       <img id="img-resort-M">
       <p id="M">M Hotel Danang</p>
       <div class="danhgia">
         <p id="sodanhgia">9.0</p>
         <div class="star">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
         </div>
       </div>
       <p id="map-paris">Bãi biển Mỹ Khuê,Đà Nẵng Xem trên bản đồ</p>
@@ -128,20 +134,21 @@
         <img id="baibien-icon">
         <p id="text-giapbien">Giáp biển</p>
       </div>
-      <p id="thongtin">Nằm ở Đà Nẵng, cách Bãi biển Mỹ Khê chỉ vài bước chân, M Hotel Danang cung cấp chỗ nghỉ có hồ bơi ngoài trời, chỗ đậu xe riêng miễn phí, trung tâm thể dục và khu vườn.</p>
-      <button id="xem">Xem chi tiết</button>
-      </div>
-      <div class="container-sanpham">
+      <p id="thongtin">Nằm ở Đà Nẵng, cách Bãi biển Mỹ Khê chỉ vài bước chân, M Hotel Danang cung cấp chỗ nghỉ có hồ bơi
+        ngoài trời, chỗ đậu xe riêng miễn phí, trung tâm thể dục và khu vườn.</p>
+      <button onclick="location.href='M.html'" id="xem">Xem chi tiết</button>
+    </div>
+    <div class="container-sanpham">
       <img id="img-resort-TMS">
       <p id="TMS">TMS Hotel Da Nang Beach</p>
       <div class="danhgia">
         <p id="sodanhgia">9.5</p>
         <div class="star">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
-        <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
+          <img id="icon-sao" src="img/Star 1.png">
         </div>
       </div>
       <p id="map-paris">Bãi biển Mỹ Khuê,Đà Nẵng Xem trên bản đồ</p>
@@ -150,185 +157,187 @@
         <img id="baibien-icon">
         <p id="text-giapbien">Giáp biển</p>
       </div>
-      <p id="thongtin">TMS Hotel Da Nang Beach có xe đạp miễn phí, hồ bơi ngoài trời, trung tâm thể dục và sân hiên ở Đà Nẵng.</p>
-      <button id="xem">Xem chi tiết</button>
+      <p id="thongtin">TMS Hotel Da Nang Beach có xe đạp miễn phí, hồ bơi ngoài trời, trung tâm thể dục và sân hiên ở Đà
+        Nẵng.</p>
+      <button onclick="location.href='TMS.html'" id="xem">Xem chi tiết</button>
+    </div>
+  </div>
+  <div class="sale">
+    <h3 id="uudai">Ưu đãi</h3>
+    <p id="text-uudai1">Khuyến mãi, giảm giá và ưu đãi đặc biệt dành riêng cho bạn</p>
+  </div>
+  <div class="container-row">
+    <div class="container-uudai">
+      <div class="text-uudai">
+        <p id="kynghi">Kỳ nghỉ ngắn ngày đầy chất lượng</p>
+        <p id="tietkiem">Tiết kiệm đến 20% với Ưu Đãi Mùa Du Lịch</p>
+        <button id="sanngay">Săn ngay</button>
+      </div>
+      <div id="img-uudai"></div>
+    </div>
+    <div class="nhanghiduong">
+      <p id="tieude">Nhà nghỉ dưỡng</p>
+      <p id="text-nhanghiduong">Nghỉ dưỡng trong ngôi nhà mơ ước</p>
+      <p id="text-luachon">Vô vàng sự lựa chọn nhà gỗ, biệt thự và hơn thế nữa</p>
+      <button id="datngay">Đặt ngay</button>
+    </div>
+  </div>
+  <div class="uudaicuoituan">
+    <h3>Ưu đãi cuối tuần</h3>
+    <p>Những ưu đãi hấp dẫn để có kỳ nghỉ tuyệt vời đang chờ bạn</p>
+  </div>
+  <div class="sanphamuudai">
+    <div class="sanpham-golden">
+      <img id="sanpham-golden">
+      <p id="ten-golden">Golden Lotus Luxury Hotel Danang</p>
+      <div class="diadiem">
+        <p id="danang">TP Đà Nẵng</p>
+        <img id="icon-danang">
+        <p>Giáp biển</p>
+      </div>
+      <div class="danhgiasanpham">
+        <p id="sosao">9.0</p>
+        <p id="trainghiemsanpham">Tuyệt vời</p>
+        <p>2 đêm</p>
+      </div>
+      <div class="gia">
+        <p id="giagiam">VND <s>7.000.000</s></p>
+        <p id="gia">VND 5.500.00</p>
+      </div>
+      <button onclick="location.href='./golden.html'" id="dat">Đặt ngay</button>
+    </div>
+    <div class="sanpham-jbay">
+      <img id="sanpham-jbay">
+      <p id="ten-jbay">JBAY Beachfront Boutique Hotel</p>
+      <div class="diadiem">
+        <p id="danang">TP Đà Nẵng</p>
+        <img id="icon-danang">
+        <p>Giáp biển</p>
+      </div>
+      <div class="danhgiasanpham">
+        <p id="sosao">9.5</p>
+        <p id="trainghiemsanpham">Tuyệt vời</p>
+        <p>3 đêm</p>
+      </div>
+      <div class="gia">
+        <p id="giagiam">VND <s>9.700.000</s></p>
+        <p id="gia">VND 7.500.00</p>
+      </div>
+      <button onclick="location.href='Jbay.html'" id="dat">Đặt ngay</button>
+    </div>
+    <div class="sanpham-M">
+      <img id="sanpham-M">
+      <p id="ten-M">M Hotel Danang</p>
+      <div class="diadiem">
+        <p id="danang">TP Đà Nẵng</p>
+        <img id="icon-danang">
+        <p>Giáp biển</p>
+      </div>
+      <div class="danhgiasanpham">
+        <p id="sosao">9.0</p>
+        <p id="trainghiemsanpham">Tuyệt vời</p>
+        <p>3 đêm</p>
+      </div>
+      <div class="gia">
+        <p id="giagiam">VND <s>10.500.000</s></p>
+        <p id="gia">VND 8.500.00</p>
+      </div>
+      <button onclick="location.href='M.html'" id="dat">Đặt ngay</button>
+    </div>
+    <div class="sanpham-paris">
+      <img id="sanpham-paris">
+      <p id="ten-paris">Paris Deli Danang Beach Hotel</p>
+      <div class="diadiem">
+        <p id="danang">TP Đà Nẵng</p>
+        <img id="icon-danang">
+        <p>Giáp biển</p>
+      </div>
+      <div class="danhgiasanpham">
+        <p id="sosao">9.0</p>
+        <p id="trainghiemsanpham">Tuyệt vời</p>
+        <p>2 đêm</p>
+      </div>
+      <div class="gia">
+        <p id="giagiam">VND <s>9.500.000</s></p>
+        <p id="gia">VND 9.500.00</p>
+      </div>
+      <button onclick="location.href='./paris.html'" id="dat">Đặt ngay</button>
+    </div>
+    <div class="sanpham-TMS">
+      <img id="sanpham-TMS">
+      <p id="ten-TMS">TMS Hotel Da Nang Beach</p>
+      <div class="diadiem">
+        <p id="danang">TP Đà Nẵng</p>
+        <img id="icon-danang">
+        <p>Giáp biển</p>
+      </div>
+      <div class="danhgiasanpham">
+        <p id="sosao">9.0</p>
+        <p id="trainghiemsanpham">Tuyệt vời</p>
+        <p>2 đêm</p>
+      </div>
+      <div class="gia">
+        <p id="giagiam">VND <s>9.500.000</s></p>
+        <p id="gia">VND 7.500.00</p>
+      </div>
+      <button onclick="location.href='TMS.html'" id="dat">Đặt ngay</button>
+    </div>
+  </div>
+  <p id="text-line">Những địa điểm mà những lần chúng ta đi qua và chúng ta nhìn lại...................</p>
+  <div id="line"></div>
+  <p id="top-sanpham">TOP địa điểm được yêu thích nhất 2025</p>
+  <div class="top">
+    <div class="sanphamtop1">
+      <div id="tim"></div>
+      <div id="ten">
+        <p id="ten-top">Golden Lotus Luxury Hotel Danang</p>
       </div>
     </div>
-    <div class="sale">
-        <h3 id="uudai">Ưu đãi</h3>
-        <p id="text">Khuyến mãi, giảm giá và ưu đãi đặc biệt dành riêng cho bạn</p>
-      </div>
-    <div class="container-row">
-      <div class="container-uudai">
-        <div class="text-uudai">
-            <p id="kynghi">Kỳ nghỉ ngắn ngày đầy chất lượng</p>
-            <p id="tietkiem">Tiết kiệm đến 20% với Ưu Đãi Mùa Du Lịch</p>
-            <button id="sanngay">Săn ngay</button>
-        </div>
-        <div id="img-uudai"></div>
-      </div>
-      <div class="nhanghiduong">
-        <p id="tieude">Nhà nghỉ dưỡng</p>
-        <p id="text-nhanghiduong">Nghỉ dưỡng trong ngôi nhà mơ ước</p>
-        <p id="text-luachon">Vô vàng sự lựa chọn nhà gỗ, biệt thự và hơn thế nữa</p>
-        <button id="datngay">Đặt ngay</button>
+    <div class="sanphamtop2">
+      <div id="tim"></div>
+      <div id="ten">
+        <p id="ten-top">JBAY Beachfront Boutique Hotel</p>
       </div>
     </div>
-    <div class="uudaicuoituan">
-      <h3>Ưu đãi cuối tuần</h3>
-      <p>Những ưu đãi hấp dẫn để có kỳ nghỉ tuyệt vời đang chờ đón bạn</p>
-    </div>
-    <div class="sanphamuudai">
-      <div class="sanpham-golden">
-        <img id="sanpham-golden">
-        <p id="ten-golden">Golden Lotus Luxury Hotel Danang</p>
-        <div class="diadiem">
-          <p id="danang">TP Đà Nẵng</p>
-          <img id="icon-danang">
-          <p>Giáp biển</p>
-        </div>
-        <div class="danhgiasanpham">
-          <p id="sosao">9.0</p>
-          <p id="trainghiemsanpham">Tuyệt vời</p>
-          <p>2 đêm</p>
-        </div>
-        <div class="gia">
-          <p id="giagiam">VND <s>7.000.000</s></p>
-          <p id="gia">VND 5.500.00</p>
-        </div>
-        <button id="dat">Đặt ngay</button>
-      </div>
-      <div class="sanpham-jbay">
-        <img id="sanpham-jbay">
-        <p id="ten-jbay">JBAY Beachfront Boutique Hotel</p>
-        <div class="diadiem">
-          <p id="danang">TP Đà Nẵng</p>
-          <img id="icon-danang">
-          <p>Giáp biển</p>
-        </div>
-        <div class="danhgiasanpham">
-          <p id="sosao">9.5</p>
-          <p id="trainghiemsanpham">Tuyệt vời</p>
-          <p>3 đêm</p>
-        </div>
-        <div class="gia">
-          <p id="giagiam">VND <s>9.700.000</s></p>
-          <p id="gia">VND 7.500.00</p>
-        </div>
-        <button id="dat">Đặt ngay</button>
-      </div>
-      <div class="sanpham-M">
-        <img id="sanpham-M">
-        <p id="ten-M">M Hotel Danang</p>
-        <div class="diadiem">
-          <p id="danang">TP Đà Nẵng</p>
-          <img id="icon-danang">
-          <p>Giáp biển</p>
-        </div>
-        <div class="danhgiasanpham">
-          <p id="sosao">9.0</p>
-          <p id="trainghiemsanpham">Tuyệt vời</p>
-          <p>3 đêm</p>
-        </div>
-        <div class="gia">
-          <p id="giagiam">VND <s>10.500.000</s></p>
-          <p id="gia">VND 8.500.00</p>
-        </div>
-        <button id="dat">Đặt ngay</button>
-      </div>
-      <div class="sanpham-paris">
-        <img id="sanpham-paris">
-        <p id="ten-paris">Paris Deli Danang Beach Hotel</p>
-        <div class="diadiem">
-          <p id="danang">TP Đà Nẵng</p>
-          <img id="icon-danang">
-          <p>Giáp biển</p>
-        </div>
-        <div class="danhgiasanpham">
-          <p id="sosao">9.0</p>
-          <p id="trainghiemsanpham">Tuyệt vời</p>
-          <p>2 đêm</p>
-        </div>
-        <div class="gia">
-          <p id="giagiam">VND <s>9.500.000</s></p>
-          <p id="gia">VND 9.500.00</p>
-        </div>
-        <button onclick="location.href='./paris.html'" id="dat">Đặt ngay</button>
-      </div>
-      <div class="sanpham-TMS">
-        <img id="sanpham-TMS">
-        <p id="ten-TMS">TMS Hotel Da Nang Beach</p>
-        <div class="diadiem">
-          <p id="danang">TP Đà Nẵng</p>
-          <img id="icon-danang">
-          <p>Giáp biển</p>
-        </div>
-        <div class="danhgiasanpham">
-          <p id="sosao">9.0</p>
-          <p id="trainghiemsanpham">Tuyệt vời</p>
-          <p>2 đêm</p>
-        </div>
-        <div class="gia">
-          <p id="giagiam">VND <s>9.500.000</s></p>
-          <p id="gia">VND 7.500.00</p>
-        </div>
-        <button id="dat">Đặt ngay</button>
+    <div class="sanphamtop3">
+      <div id="tim"></div>
+      <div id="ten">
+        <p id="ten-top">M Hotel Danang</p>
       </div>
     </div>
-    <p id="text-line">Những địa điểm mà những lần chúng ta đi qua và chúng ta nhìn lại...................</p>
-    <div id="line"></div>
-    <p id="top-sanpham">TOP địa điểm được yêu thích nhất 2025</p>
-    <div class="top">
-      <div class="sanphamtop1">
-        <div id="tim"></div>
-        <div id="ten">
-          <p id="ten-top">Golden Lotus Luxury Hotel Danang</p>
-        </div>
-      </div>
-      <div class="sanphamtop2">
-        <div id="tim"></div>
-        <div id="ten">
-          <p id="ten-top">JBAY Beachfront Boutique Hotel</p>
-        </div>
-      </div>
-      <div class="sanphamtop3">
-        <div id="tim"></div>
-        <div id="ten">
-          <p id="ten-top">M Hotel Danang</p>
-        </div>
-      </div>
-      <div class="sanphamtop4">
-        <div id="tim"></div>
-        <div id="ten">
-          <p id="ten-top">Paris Deli Danang Beach Hotel</p>
-        </div>
-      </div>
-      <div class="sanphamtop5">
-        <div id="tim"></div>
-        <div id="ten">
-          <p id="ten-top">TMS Hotel Da Nang Beach</p>
-        </div>
+    <div class="sanphamtop4">
+      <div id="tim"></div>
+      <div id="ten">
+        <p id="ten-top">Paris Deli Danang Beach Hotel</p>
       </div>
     </div>
-    <div class="end">
-      <div class="gioithieu">
-        <h3>Về chúng tôi</h3>
-        <p>Tìm hiểu về HOLAHOLA</p>
-        <p>Chúng tôi hoạt động như thế nào?</p>
-        <p>Du lịch bền vững</p>
-        <p>Truyền thông</p>
-        <p>Liên hệ công ty</p>
-      </div>
-      <div class="brand-ct">
-        <div id="brand"></div>
-        <p id="banquyen">Bản quyền © 1996 - 2025 HOLAHOLA.com™. Bảo lưu mọi quyền.</p>
-        <p id="website">HOLAHOLA.COM</p>
-      </div>
-      <div class="quocgia">
-        <div id="icon_quocki"></div>
-        <p id="vnd">VND</p>
+    <div class="sanphamtop5">
+      <div id="tim"></div>
+      <div id="ten">
+        <p id="ten-top">TMS Hotel Da Nang Beach</p>
       </div>
     </div>
   </div>
-  </body>
+  <div class="end">
+    <div class="gioithieu">
+      <h3>Về chúng tôi</h3>
+      <p>Tìm hiểu về HOLAHOLA</p>
+      <p>Chúng tôi hoạt động như thế nào?</p>
+      <p>Du lịch bền vững</p>
+      <p>Truyền thông</p>
+      <p>Liên hệ công ty</p>
+    </div>
+    <div class="brand-ct">
+      <div id="brand"></div>
+      <p id="banquyen">Bản quyền © 1996 - 2025 HOLAHOLA.com™. Bảo lưu mọi quyền.</p>
+      <p id="website">HOLAHOLA.COM</p>
+    </div>
+    <div class="quocgia">
+      <div id="icon_quocki"></div>
+      <p id="vnd">VND</p>
+    </div>
+  </div>
+  </div>
+</body>
+
 </html>
