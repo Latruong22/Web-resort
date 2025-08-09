@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname;
-    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    var currentPage = window.location.pathname;
+    var currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     // đăng ký
     if (currentPage.includes("dangky.html")) {
-        const btnDangKy = document.getElementById("log");
+        var btnDangKy = document.getElementById("log");
         btnDangKy.addEventListener("click", function () {
-            const name = document.getElementById("name").value;
-            const username = document.getElementById("ID").value;
-            const password = document.getElementById("pass").value;
-            const email = document.getElementById("mail").value;
+            var name = document.getElementById("name").value;
+            var username = document.getElementById("ID").value;
+            var password = document.getElementById("pass").value;
+            var email = document.getElementById("mail").value;
 
             if (!name || !username || !password || !email) {
                 alert("Vui lòng điền đầy đủ thông tin!");
                 return;
             }
 
-            const user = {
+            var user = {
                 name: name,
                 username: username,
                 password: password,
@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // đăng nhập
     if (currentPage.includes("dangnhap.html")) {
-        const btnDangNhap = document.getElementById("log");
+        var btnDangNhap = document.getElementById("log");
         btnDangNhap.addEventListener("click", function () {
-            const username = document.getElementById("ID").value;
-            const password = document.getElementById("pass").value;
+            var username = document.getElementById("ID").value;
+            var password = document.getElementById("pass").value;
 
-            const storedUser = localStorage.getItem(username);
+            var storedUser = localStorage.getItem(username);
             if (!storedUser) {
                 alert("Tài khoản không tồn tại!");
                 return;
             }
 
-            const user = JSON.parse(storedUser);
+            var user = JSON.parse(storedUser);
             if (user.password === password) {
                 alert("Đăng nhập thành công!");
                 localStorage.setItem("currentUser", JSON.stringify(user));
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    const loginBtn = document.getElementById("dangnhap");
-    const userDisplay = document.getElementById("username-display");
+    var loginBtn = document.getElementById("dangnhap");
+    var userDisplay = document.getElementById("username-display");
 
     if (currentUser) {
         if (userDisplay) {

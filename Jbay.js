@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     var currentUser = JSON.parse(localStorage.getItem("currentUser"));
     const loginBtn = document.getElementById("dangnhap");
     const userDisplay = document.getElementById("username-display");
@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (userDisplay) {
             userDisplay.textContent = `Xin chào, ${currentUser.name}!`;
         }
-
         if (loginBtn) {
             loginBtn.textContent = "Đăng xuất";
             loginBtn.addEventListener("click", function () {
@@ -42,8 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Vui lòng nhập nội dung đánh giá.");
                 return;
             }
-
-            // Thêm đánh giá mới vào phần hiển thị
             var theMoi = document.createElement("p");
             theMoi.textContent = `${currentUser.name}: ${noiDung}`;
             hienThiDanhGia.appendChild(theMoi);
@@ -51,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
             inputDanhGia.value = "";
         });
     }
-
-    //tính tiền phòng
     var btnDatPhong = document.getElementById("btn-toisedat");
     var ngayNhan = document.getElementById("ngaynhan");
     var ngayTra = document.getElementById("ngaytra");
@@ -101,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Bạn phải đăng nhập để đặt phòng!");
                 return;
             }
-            // Kiểm tra nhập đủ thông tin
             if (!ngayNhan.value || !ngayTra.value || !selectSoLuong.value || !tongTienInput.value || ghiChu.value.trim() === "") {
                 alert("Vui lòng nhập đầy đủ thông tin để đặt phòng!");
                 return;
